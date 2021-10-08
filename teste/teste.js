@@ -4,6 +4,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     var resultado = document.getElementById('resultado');
   if(resultado){
+    window.localStorage.setItem('teste','teste')
       resultado.addEventListener('click',function teste(){
         var sim = document.getElementById('sim').checked;
         var nao = document.getElementById('nao').checked;
@@ -356,8 +357,10 @@ document.addEventListener('DOMContentLoaded', function () {
           alert("daltonico pois errou " +  
           
           score   +   "perguntas" )
+          chrome.runtime.sendMessage('daltonico')
         }
         else{
+          chrome.runtime.sendMessage('nao_daltonico')
           alert("não daltonico")
         }
   
