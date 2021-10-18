@@ -9,14 +9,13 @@
     },
     "permissions": ["activeTab"],
     "background":{
-        "scripts":["backgraund.js"]
+      "scripts": ["background.js"],
+      "persistent": false
     },
     "content_scripts": [
         {
-          "matches": [
-            "<all_urls>"
-          ],
-          "js": ["scripts.js", "./teste/teste.js"]
+          "matches": ["http://*/*", "https://*/*"],
+          "js": ["content.js"]
         }
       ]
 }
