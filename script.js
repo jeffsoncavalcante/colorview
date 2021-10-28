@@ -8,6 +8,7 @@ chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
         updatehtml(document.querySelectorAll('h6'))
         updatehtml(document.querySelectorAll('p'))
         updatehtml(document.querySelectorAll('div'))
+        updatehtml(document.querySelectorAll('a'))
         updatehtml(document.querySelectorAll('span'))
         updatehtml(document.querySelectorAll('li'))
         updatehtml(document.querySelectorAll('input'))
@@ -140,6 +141,12 @@ chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
                     },'0,116,204':{
                         "cor":"azul"
                     },
+                    "6,105,222":{
+                        "cor":"azul"
+                    },
+                    "78,92,239":{
+                        "cor":"azul"
+                    },
                     "128,0,0":{
                         "cor":"vermelho"
                     },
@@ -182,7 +189,16 @@ chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
                     
                     "240,128,128":{
                         "cor":"vermelho"
-                    }                      
+                    },
+                    "196,23,12":{
+                        "cor":"vermelho"
+                    },
+                    "166,19,19":{
+                        "cor":"vermelho"
+                    },
+                    "168,0,0":{
+                        "cor":"vermelho"
+                    }                  
                 }    
             }
 
